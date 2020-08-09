@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     /* max-width: 599px; */
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
@@ -10,6 +11,8 @@ html {
     scroll-behavior: smooth;
   }
 
+
+
   ul {
       list-style-type: none;
   }
@@ -19,12 +22,17 @@ html {
   }
 
   .fas, .fab {
+      transition-duration: .25s;
       font-size: 40px;
-      color: rgb(0, 0, 0);
+      color: rgb(36, 36, 36);
+  }
+
+  .fas:hover {
+      color: #727272;
   }
 
   .navbar-bottom {
-      z-index: 10;
+      z-index: 20;
     box-shadow: 0px -1px 6px rgba(65, 65, 65, 0.329);
     backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(5px) !important;
@@ -156,7 +164,7 @@ html {
 }
 
 .title8 {
-    color: rgb(247, 247, 247);
+    color: rgb(66, 66, 66);
 }
 
 .title9 {
@@ -404,3 +412,60 @@ html {
 :root {
     --swiper-theme-color: #eeeeeece !important;
 }
+
+.footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 25px;
+    max-width: 600px;
+    background: white;
+    height: 225px;
+}
+
+.footer-logo {
+    padding-right: 20px;
+    padding-top: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.site {
+    font-size: 30px;
+    padding-top: 75px;
+}
+
+.mobile-nav {
+    display: none;
+    z-index: 15;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(50px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.486);
+}
+
+
+
+
+.mobile-nav-container {
+    padding-top: 45vh;
+    text-align: center;
+    font-size: 40px;
+}
+
+.mobile-nav-container >li {
+    
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+

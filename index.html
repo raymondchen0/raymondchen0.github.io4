@@ -7,19 +7,37 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="/main.js"></script>
     <title>Raymond Chen</title>
 </head>
 
 <body>
+    <div class="mobile-nav" id="myDiv">
+        <div class="mobile-nav-container">
+        <li>
+            <a class="navigation2" href="">work</a>
+        </li>
+        <li>
+            <a class="navigation2" href="">contact</a>
+        </li>
+        <li>
+            <a class="navigation2" href="">about</a>
+        </li>
+        <li>
+            <a class="navigation2" href="">LinkedIn</a>
+        </li>
+    </div>
+    </div>
     <div class="bottom-nav">
         <ul class="navbar-bottom">
-            <a class="bot-nav" href=""><i class="fas fa-briefcase"></i></a>
-            <a class="bot-nav" href=""><i class="fas fa-envelope"></i></a>
-            <a class="bot-nav" href=""><i class="fas fa-info"></i></a>
-            <a class="bot-nav" href=""><i class="fab fa-linkedin-in"></i></a>
+            <button class="show-btn">
+            <a class="bot-nav" href=""><i class="fas fa-arrow-circle-up"></i></a>
+        </button>
         </ul>
     </div>
     <section class="section-a roboto">
@@ -92,7 +110,17 @@
             </div>
             <div class="title title2 roboto"><span class="main-span t2">CookieJar </span>— Regain your peace of mind.
                 See how you can regain control of your valuable data.</div>
-            <img class="hero-image repetition" src="/1_Cqx7aIgqscZveqJNgcMutA.jpg" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="hero-image" src="/cookie1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="hero-image" src="/cookie4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="hero-image" src="/cookie2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="hero-image" src="/cookie3.jpg" alt=""></div>
+                
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
             <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
             <div class="desc-container">
                 <div class="container">
@@ -115,7 +143,6 @@
                       <div class="swiper-slide"><video autoplay loop class="hero-image" src="/CVPA1.mp4"></video></div>
                       <div class="swiper-slide"><video autoplay loop class="hero-image" src="/CVPA2.mp4"></video></div>
                       <div class="swiper-slide"><video autoplay loop class="hero-image" src="/CVPA3.mp4"></video></div>
-                      <div class="swiper-slide"><video autoplay loop class="hero-image" src="/CVPA4.mp4"></video></div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -132,15 +159,25 @@
         </div>
     </section>
     <!-- MASS AUDOBON -->
-    <section class="section-b" style="background-color: #4f758b;">
+    <section class="section-b" style="background-color: #487086;">
         <div class="section-container">
             <div class="branding">STATIONERY // FORMS:</div>
             <div class="title title4 roboto"><span class="main-span t4">Allens Pond </span>— Gift and pledge form redesign for Mass Audubon, Allens Pond.</div>
-            <img class="hero-image repetition" src="/Repetition mockup.png" alt="">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="hero-image" src="/allenspond1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/allenspond2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/allenspond3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/allenspond4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/allenspond5.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
             <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
             <div class="desc-container">
                 <div class="container">
-                    <div class="desc">ALLENS POND WAS IN NEED OF NEW FORMS FOR SPONSORSHIPS AND DONATIONS. AS THE PROJECT EVOLVED THEY WANTED MORE THAN JUST ANOTEHR GEMERIC FORM. SEE HOW THE INFORMATION WAS CONDENSED AND ORGANIZED INTO AN EASY TO USE FORM.</div>
+                    <div class="desc" style="color: azure;">ALLENS POND WAS IN NEED OF NEW FORMS FOR SPONSORSHIPS AND DONATIONS. AS THE PROJECT EVOLVED THEY WANTED MORE THAN JUST ANOTEHR GEMERIC FORM. SEE HOW THE INFORMATION WAS CONDENSED AND ORGANIZED INTO AN EASY TO USE FORM.</div>
                 </div>
                 <div class="container">
                     <div class="full-project full-project1">FULL PROJECT ></div>
@@ -149,12 +186,18 @@
         </div>
     </section>
     <!-- LIPTON REBRAND -->
-    <section class="section-b" style="background-color: rgb(173, 192, 158);">
+    <section class="section-b" style="background-color: rgb(200, 211, 186);">
         <div class="section-container">
             <div class="app-mockup">PACKAGING:</div>
             <div class="title title5 roboto"><span class="main-span t5">LIPTON REBRAND </span>— Get in shape. Stay
                 motivated with the help of your friends and family.</div>
-            <img class="hero-image repetition" src="/Repetition mockup.png" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="hero-image" src="/lipton1.jpg" alt=""></div>
+                    <!-- </div> -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
             <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
             <div class="desc-container">
                 <div class="container">
@@ -171,11 +214,19 @@
         <div class="section-container">
             <div class="app-mockup">WEB DESIGN</div>
             <div class="title title6 roboto"><span class="main-span t6">HACKINTOSH </span>— Why choose one when you can have the best of both? Mac and Windows. </div>
-            <img class="hero-image repetition" src="/Repetition mockup.png" alt="">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="hero-image" src="/hack1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/hack2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="hero-image" src="/hack3.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
             <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
             <div class="desc-container">
                 <div class="container">
-                    <div class="desc">A mock up of an Apple inspired Hackintosh site. IT ACTS AS AN TO WHAT A HACKINTOSH IS WHILE ALSO LINKING TO USEFUL EXTERNAL RESOURCES FOR BUILDING YOUR OWN MACHINE.</div>
+                    <div class="desc">A MOCK UP OF AN APPLE INSPIRED HACKINTOSH SITE. IT ACTS AS A PORTAL TO DISCOVER WHAT A HACKINTOSH IS WHILE ALSO LINKING TO USEFUL EXTERNAL RESOURCES FOR BUILDING YOUR OWN MACHINE.</div>
                 </div>
                 <div class="container">
                     <div class="full-project full-project1">VIEW SITE ></div>
@@ -183,20 +234,46 @@
             </div>
         </div>
     </section>
+        <!-- CALLUNA -->
+        <section class="section-b" style="background-color: rgb(255, 255, 255);">
+            <div class="section-container">
+                <div class="app-mockup">BRANDING // APP MOCKUP</div>
+                <div class="title title8 roboto"><span class="main-span t8">CALLUNA </span>— Keep yourself and others safe,
+                    built in alerts and monitoring for seizures.</div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="hero-image" src="/calluna1.png" alt=""></div>
+                            <div class="swiper-slide"><img class="hero-image" src="/calluna2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="hero-image" src="/calluna3.jpg" alt=""></div>
+                        </div>
+                                            <!-- Add Pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
+                <div class="desc-container">
+                    <div class="container">
+                        <div class="desc">AN APP THAT HELPS KEEP YOUR LOVED ONES SAFE. IT IS A MEDICAL APP THAT REMINDS ITS USERS AND INFORM THEM ON HOW TO KEEP THEIR SEIZURES UNDER CONTROL. IT WILL ALSO NOTIFY MEDICAL PERSONEL AND LOVED ONES IF THE USER EXPERIENCES A MEDICAL EMERGENCY AND IS NOT ABLE TO FIND HELP THEMSELVES.</div>
+                    </div>
+                    <div class="container">
+                        <div class="full-project full-project1">FULL PROJECT ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!-- OAKS PACKAGING -->
     <section class="section-b" style="background-color: rgb(20, 20, 20);">
         <div class="section-container">
             <div class="app-mockup">PACKAGING:</div>
-            <div class="title title7 roboto"><span class="main-span t7">OAKS </span>— Get in shape. Stay motivated with
-                the help of your friends and family.</div>
-            <img class="hero-image repetition" src="/Repetition mockup.png" alt="">
+            <div class="title title7 roboto"><span class="main-span t7">OAKS </span>— Get a taste of these bold flavors. Oaks seasoning mix goes well on just about everything.</div>
+            <!-- <div class="swiper-container"> -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="hero-image" src="/oaks1.jpg" alt=""></div>
+                </div>
+                
             <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
             <div class="desc-container">
                 <div class="container">
-                    <div class="desc">A FITNESS APP THAT INCORPORATES THE COMMUNITY. WHEN STARTING A NEW WORKOUT ROUTINE
-                        IT'S OFTEN DIFFICULT TO STAY MOTIVATED AND ON TRACK. GOALs ARE SET BUT OFTEN LEFT UNREACHED.
-                        HELP GET THE MOTIVATION YOU NEED BY ENGAGING WITH A SUPPORTIVE COMMUNITY OF PEOPLE THAT ARE JUST
-                        LIKE YOU.</div>
+                    <div class="desc" style="color: azure;">PACKAGING / PRODUCT DESIGN FOR OAKS SEASOONING. I WANTED THE BRAND TO BE KNOWN FOR ITS BOLD FLAVORS. I FURTHER EMPHASIZED THE BOLDNESS BY USING A SLAB SERIF TYPEFACE IN ALL CAPS. THE DARK BACKGROUND WITH BRIGHT COLORS ALSO FURTHER EMPHASIZES THIS POINT THROUGH THE USE OF CONTRAST.</div>
                 </div>
                 <div class="container">
                     <div class="full-project full-project1">FULL PROJECT ></div>
@@ -204,27 +281,7 @@
             </div>
         </div>
     </section>
-    <!-- CALLUNA -->
-    <section class="section-b" style="background-color: rgb(255, 166, 106);">
-        <div class="section-container">
-            <div class="app-mockup">BRANDING // APP MOCKUP</div>
-            <div class="title title8 roboto"><span class="main-span t8">CALLUNA </span>— Keep yourself and others safe,
-                built in alerts and monitoring for seizures.</div>
-            <img class="hero-image repetition" src="/Repetition mockup.png" alt="">
-            <!-- COME BACK ALTER TO ADD POSSIBLE JS BUTTONS -->
-            <div class="desc-container">
-                <div class="container">
-                    <div class="desc">A FITNESS APP THAT INCORPORATES THE COMMUNITY. WHEN STARTING A NEW WORKOUT ROUTINE
-                        IT'S OFTEN DIFFICULT TO STAY MOTIVATED AND ON TRACK. GOALs ARE SET BUT OFTEN LEFT UNREACHED.
-                        HELP GET THE MOTIVATION YOU NEED BY ENGAGING WITH A SUPPORTIVE COMMUNITY OF PEOPLE THAT ARE JUST
-                        LIKE YOU.</div>
-                </div>
-                <div class="container">
-                    <div class="full-project full-project1">FULL PROJECT ></div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- CARDS AGAINST DESIGN -->
     <!-- <section class="section-b" style="background-color: rgb(0, 0, 0);">
         <div class="section-container">
@@ -247,11 +304,11 @@
     </section> -->
     <!-- footer -->
     <footer>
-        
+        <div class="footer-container">
+            <img class= "footer-logo" src="/r-svg.png" alt="">
+            <div class="site">rchendesign.com</div>
+        </div>
     </footer>
-</body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 
   <!-- Swiper JS -->
   <script src="../package/swiper-bundle.min.js"></script>
@@ -259,14 +316,25 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
       pagination: {
-        dynamicBullets: true,
         el: '.swiper-pagination',
-        clickable: true,
+        dynamicBullets: true,
       },
     });
   </script>
+
+<script>  
+    function showhide() 
+    {  
+        var div = document.getElementById("newpost");  
+        if (div.style.display !== "none") {  
+            div.style.display = "none";  
+        }  
+        else {  
+            div.style.display = "block";  
+        }  
+    }  
+</script>  
+
+</body>
 </html>
