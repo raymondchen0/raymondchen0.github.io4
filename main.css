@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     /* max-width: 599px; */
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
@@ -77,7 +77,7 @@ html {
 .hero-txt {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 700;
-    font-size: 125px;
+    font-size: 115px;
     color: rgb(27, 27, 27);
     padding-top: 50px;
     padding-bottom: 20px;
@@ -87,7 +87,7 @@ html {
     color: #494949;
     font-weight: 700;
     font-family: 'Roboto mono', sans-serif;
-    font-size: 40px;
+    font-size: 36px;
     padding-bottom: 100px;
 }
 
@@ -497,17 +497,18 @@ html {
   }
   
   .overlay a {
+      font-weight: 700;
       z-index: 20;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #6d6d6d;
   }
   
   .overlay .closebtn {
