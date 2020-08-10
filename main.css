@@ -105,12 +105,44 @@ html {
 }
 
 .app-mockup {
-    width: 93px;
-    border-bottom: 1.25px solid #FBFBFB;
+    width: 92px;
+
+}
+
+.animation {
+    width: 84px;
+}
+
+.forms {
+    width: 170px;
+}
+
+.brand-mockup {
+    border-bottom: solid 1.25px slategray !important;
+    width: 195px;
+}
+
+.web {
+    border-bottom: solid 1.25px slategray !important;
+    color: slategray !important;
+    width: 92px;
+}
+
+.packaging {
+    width: 83px;
+}
+
+
+
+.branding, .animation, .app-mockup, .forms, .packaging, .web, .brand-mockup {
+    color: #FBFBFB;
     font-size: 14px;
     padding-top: 100px;
-    color: #FBFBFB;
+    border-bottom: 1.5px solid #FBFBFB;
+    white-space: nowrap;
 }
+
+
 
 .branding {
     white-space: nowrap;
@@ -124,7 +156,24 @@ html {
 .title {
     font-weight: 400;
     font-size: 34px;
-    padding-top: 40px;
+    padding-top: 40px; {
+    width: 170px;
+}
+
+.packaging {
+    width: 83px;
+}
+
+.brand-mockup {
+    width: 193px;
+    border-bottom: solid 1.25px slategray !important;
+}
+
+.web {
+    color: slategray !important;
+    width: 87px;
+    border-bottom: solid 1.25px slategray !important;
+}
 }
 
 .main-span {
@@ -312,15 +361,39 @@ html {
     }
 
     .app-mockup {
-        border-bottom: 1.5px solid #FBFBFB;
         width: 133px;
-        font-size: 20px;
+    }
+
+    .animation {
+        width: 118px;
     }
 
     .branding {
-        border-bottom: 1.5px solid #FBFBFB;
         width: 250px;
+    }
+
+    .forms {
+        width: 240px;
+    }
+    
+    .packaging {
+        width: 118px;
+    }
+    
+    .brand-mockup {
+        width: 275px;
+        border-bottom: solid 1.25px slategray !important;
+    }
+    
+    .web {
+        color: slategray;
+        width: 130px;
+        border-bottom: solid 1.25px slategray !important;
+    }
+
+    .branding, .animation, .app-mockup, .forms, .packaging, .web, .brand-mockup {
         font-size: 20px;
+        border-bottom: 1.5px solid #FBFBFB;
     }
 
     p {
