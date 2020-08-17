@@ -12,6 +12,7 @@ html {
   }
 
   .full-project > a{
+      color: white !important;
       text-decoration: none;
   }
 
@@ -20,7 +21,7 @@ html {
 }
 
 .full-project > a:visited{
-    color: white;
+    color: white !important;
 }
 
 
