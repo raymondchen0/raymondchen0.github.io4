@@ -11,6 +11,19 @@ html {
     scroll-behavior: smooth;
   }
 
+  .full-project > a{
+      text-decoration: none;
+  }
+
+  .full-project > a:hover{
+      border-bottom: none;
+}
+
+.full-project > a:visited{
+    color: white;
+}
+
+
 
 
   ul {
@@ -301,6 +314,7 @@ html {
     .hero-txt {
         font-size: 160px;
     }
+}
 
 
 @media only screen and (min-width: 980px) {
