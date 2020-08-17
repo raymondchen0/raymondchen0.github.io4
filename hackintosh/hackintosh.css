@@ -1,0 +1,331 @@
+body {
+    overflow-x: hidden;
+    /* max-width: 599px; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    width: 480px;
+}
+
+h1 {
+    line-height: 68px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-size: 64px;
+    color: white;
+}
+
+h3 {
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #63636E;
+    font-size: 28px;
+}
+
+.section-a {
+    /* background: #121217; */
+    background: #f2f2f2;
+}
+
+.title{
+    color: rgb(14, 14, 14);
+    font-weight: 400;
+    padding-top: 20px;
+    margin: 0 0 10px 0px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.slogan {
+    color: rgb(99, 99, 110);
+}
+
+.hero-image {
+    opacity: 0;
+    padding-top: 50px;
+}
+
+.section-a2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 599px;
+}
+
+.facts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:  0px 40px 40px 40px;
+}
+
+.fact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #63636E;
+    font-weight: 700;
+    font-size: 24px;
+    color: #63636E;
+}
+
+.top {
+    color: #7E7E7E;
+    padding-bottom: 50px;
+}
+
+.bootloader {
+    font-size: 37px;
+    color: #7E7E7E;
+}
+
+.section-b, .section-c {
+    padding-top: 150px;
+    max-width: 599px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px 40px;
+}
+
+.section-b > h3, .section-c > h3 {
+    padding: 0 0 16px 0;
+    margin: 0;
+    font-size: 37px;
+    color: #7E7E7E;
+}
+
+.section-b > h1, .section-c > h1 {
+    margin-bottom: 40px;
+    color: black;
+    font-size: 64px;
+}
+
+.section-b > p, .section-b > p {
+    font-size: 21px;
+    color: #7E7E7E;
+}
+
+.information {
+    color: #7E7E7E;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.up-to {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.upto-txt, .bottom-txt {
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.info {
+    font-size: 64px;
+}
+
+.secondary {
+    font-size: 40px;
+}
+
+.section-c {
+    padding-top: 150px;
+    background: #18171D;
+}
+
+.section-c > h1 {
+    color: white;
+}
+
+.section-c > p {
+    color: #7E7E7E;
+}
+
+.section-d, .section-f {
+    padding: 100px 0px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.section-d {
+    background-image: url(/tile_macos__eqcfqi9lz0qe_large.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-f {
+    background-image: url(/windows\ 10.jpg);
+    background-size: cover;
+    background-position: center center ;
+    padding-bottom: 200px;
+}
+
+.section-d >h1, .section-f >h1 {
+    font-weight: 700;
+}
+
+.section-d >h3, .section-f >h3 {
+    color: white;
+    font-weight: 400;
+}
+
+.resource-section {
+    background-color: black;
+}
+
+.spacer {
+    height: 200px;
+}
+
+.section-c-top {
+    background-image: url(/chip_motherboard__cbmirasqheeu_large.png);
+    background-position: right top;
+    background-size: cover;
+}
+
+.resource {
+    padding-bottom: 100px;
+}
+
+.monitor {
+    padding-top: 20px;
+    padding-bottom: 400px;
+    width: 420px;
+}
+
+.title-3 {
+    font-size: 37px;
+    margin: 0px 0px 16px 0px;
+}
+
+.bg-wrap {
+    background-color: #18171D;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 720px) {
+    .information {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .hero-image {
+        padding-top: 100px;
+    }
+
+    .video {
+        width: 720px;
+    }
+
+    img {
+        width: 720px;
+    }
+
+
+
+    .information > div {
+        padding-right: 40px;
+    }
+
+    .section-a2 {
+        max-width: 700px;
+    }
+
+    .monitor {
+        width: 590px;
+    }
+
+    .section-b, .section-c {
+        max-width: 720px;
+    }
+
+    .video {
+        width: 980px;
+    }
+
+  }
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 980px) {
+    .information > div {
+        padding-right: 250px;
+    }
+
+
+
+    img {
+        width: 980px;
+    }
+
+
+    .section-a2 {
+        padding-bottom: 100px;
+        max-width: 980px;
+    }
+
+    .monitor {
+        width: 980px;
+    }
+
+    .section-b, .section-c {
+        max-width: 980px;
+    }
+
+    .fact {
+        margin-top: 0;
+    }
+
+
+    .facts {
+        margin-top: 50px;
+        column-count: 2;
+        column-gap: 100px;
+    }
+
+  }
+
+  @media screen and (min-width: 1356px) {
+      img {
+          width: 1356px;
+      }
+
+  }
+
+
+  /* ANIMATIONS */
+.mainTitle {
+    opacity: 0;
+}
+
+.title-2, .slogan-2, .top-paragraph{
+    opacity: 0;
+}
+
+
