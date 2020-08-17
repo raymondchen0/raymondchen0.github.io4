@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  a {
+      color: snow;
+  }
+
   .full-project > a{
       color: white !important;
       text-decoration: none;
